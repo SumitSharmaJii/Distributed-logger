@@ -2,6 +2,7 @@
 # Distributed Logging and Search System
 
 This system leverages Docker containers orchestrated with Docker Compose.Key components include Apache Kafka for event streaming, MySQL for persistent storage, and separate services for log ingestion, processing, and search.
+![flowchart](https://github.com/SumitSharmaJii/Distributed-logger/assets/76654882/0b7eba85-48ab-4651-9032-80dc722cc266)
 
 
 ## Instructions
@@ -11,6 +12,9 @@ This system leverages Docker containers orchestrated with Docker Compose.Key com
 ```
 -  Messages can be injested to HTTP server at **localhost:3000**
 - **localhost:4000** serves a HTML page to make search queries
+
+## Video Demo
+https://github.com/SumitSharmaJii/Distributed-logger/assets/76654882/5ac149a8-01f1-4dc4-9e09-9cd473df6f9d
     
 ## Overview
 
