@@ -1,0 +1,13 @@
+{
+    "name": "log-consumer",
+    "version": "1.0.0",
+    "description": "Log Consumer Node.js Application",
+    "main": "consumer.js",
+    "scripts": {
+        "start": "node consumer.js"
+    },
+    "dependencies": {
+        "kafkajs": "^2.2.4",
+        "mysql2": "^3.6.3"
+    }
+}

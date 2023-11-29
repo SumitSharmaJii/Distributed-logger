@@ -1,0 +1,11 @@
+FROM node:14
+
+WORKDIR /consumer
+
+COPY consumer/package*.json ./
+
+RUN npm install
+
+COPY consumer/ .
+
+CMD ["node", "consumer.js"]

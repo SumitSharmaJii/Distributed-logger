@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log Search</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div>
+        <label for="column">Select Column:</label>
+        <select id="column">
+            <option value="level">Level</option>
+            <option value="message">Message</option>
+            <option value="resourceId">Resource ID</option>
+            <option value="traceId">Trace ID</option>
+            <option value="spanId">Span ID</option>
+            <option value="commit">Commit</option>
+            <option value="parentResourceId">Parent Resource ID</option>
+        </select>
+    </div>
+    <div>
+        <label for="search">Search Query String for Selected Column:</label>
+        <input type="text" id="search" />
+    </div>
+    <div>
+        <label for="startTime">Start Time:</label>
+        <input type="datetime-local" id="startTime" />
+    </div>
+    <div>
+        <label for="endTime">End Time:</label>
+        <input type="datetime-local" id="endTime" />
+    </div>
+    <button onclick="searchLogs()">Search</button>
+
+    <div id="results-container">
+        <h2 id="results-heading">Results</h2>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
